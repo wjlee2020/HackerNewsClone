@@ -11,12 +11,12 @@ export default async function Stories(path) {
     </div>`;  
 }
 
-// from: https://node-hnapi.herokuapp.com routes
-// / (TOP) -> /news
-// /new (newest) -> /newest
-// /ask (Ask) -> /ask
-// /show (show) -> /show
-// /jobs (jobs) -> /jobs
+/* from: https://node-hnapi.herokuapp.com routes
+ / (TOP) -> /news
+ /new (newest) -> /newest
+ /ask (Ask) -> /ask
+ /show (show) -> /show
+ /jobs (jobs) -> /jobs */
 
 async function getStories(path) {
     //check to see if on home route
