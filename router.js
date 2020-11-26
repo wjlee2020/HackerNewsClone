@@ -1,6 +1,7 @@
 
 import Stories from './pages/stories.js';
 import Item from './pages/item.js';
+import Favorites from './pages/favorites.js';
 
 //initializing router, using hash router, prepended with # mark
 const router = new Navigo(null, true, '#');
@@ -20,7 +21,8 @@ export default class RouterHandler {
       { path: '/new', page: Stories },
       { path: '/ask', page: Stories },
       { path: '/show', page: Stories },
-      { path: '/item', page: Item}
+      { path: '/item', page: Item},
+      { path: '/favorites', page: Favorites}
     ];
     
     //to create each route, iterate over routes array
