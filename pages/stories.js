@@ -1,3 +1,5 @@
+import Story from '../components/Story.js'
+
 import view from '../utils/view.js';
 
 export default async function Stories(path) {
@@ -7,7 +9,7 @@ export default async function Stories(path) {
     const hasStories = stories.length > 0;
     //display the html in the browser via ternary to make sure there are stories
     view.innerHTML = `<div>
-        ${hasStories ? stories.map(story => JSON.stringify(story)) : 'No stories available'}
+    ${hasStories ? stories.map((story, i) => Story({ ...story, index: i + 1})).join('') : 'No stories'}
     </div>`;  
 }
 
